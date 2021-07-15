@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         'sans': ['"Montserrat"']
       },
+      colors: {
+        'dropdown-gray': "hsla(198, 21%, 66%, 0.2)",
+      }
     },
   },
   variants: {
