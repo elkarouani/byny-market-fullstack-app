@@ -5,6 +5,9 @@ export default async (): Promise<Config.InitialOptions> => {
     verbose: true,
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.ts"
-    ]
+    ],
+    "moduleNameMapper": {
+      "^components/(.*)": "<rootDir>/components/",
+    }
   };
 };

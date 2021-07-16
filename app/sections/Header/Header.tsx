@@ -1,5 +1,5 @@
 import React from 'react';
-import { CategoriesDropDown } from 'components';
+import { CategoriesDropDown } from 'components/';
 
 export default function Header() {
 	return (
