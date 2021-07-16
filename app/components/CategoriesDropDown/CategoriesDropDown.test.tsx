@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import CategoriesDropDown from "./CategoriesDropDown";
 
 
-describe("CategoriesDropDown", () => {
+describe("Categories DropDown", () => {
   it("renders with expected label", () => {
     render(<CategoriesDropDown />);
     const label = screen.getByRole('label') as HTMLSpanElement;
@@ -11,7 +11,7 @@ describe("CategoriesDropDown", () => {
   });
 });
 
-describe("CategoriesDropDown", () => {
+describe("Categories DropDown", () => {
   it("renders with expected drop down icon", () => {
     render(<CategoriesDropDown />);
     const dropdown_icon = screen.getByRole("dropdown-icon") as HTMLImageElement;
