@@ -1,14 +1,10 @@
-import { Header } from 'sections';
-import { ProductCard } from 'components';
+import { Header, NewProducts } from 'sections';
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-max">
       <Header />
-      <div className="flex space-x-4">
-        <ProductCard />
-        <ProductCard />
-      </div>
+      <NewProducts />
     </div>
   )
 }

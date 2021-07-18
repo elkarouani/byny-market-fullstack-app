@@ -17,3 +17,21 @@ describe("New Products", () => {
 		expect(screen.getByRole('products-list')).toBeInTheDocument();
 	})
 })
+
+describe("New Products", () => {
+  it("renders with expected left arrow on mobile screens", () => {
+    render(<Header />);
+    const left_arrow_icon = screen.getByRole("scroll-left") as HTMLImageElement;
+    expect(left_arrow_icon.src).toContain("leftarrow");
+    expect(left_arrow_icon.alt).toBe("leftarrow");
+  });
+});
+
+describe("New Products", () => {
+  it("renders with expected right arrow on mobile screens", () => {
+    render(<NewProducts />);
+    const right_arrow_icon = screen.getByRole("scroll-right") as HTMLImageElement;
+    expect(right_arrow_icon.src).toContain("rightarrow");
+    expect(right_arrow_icon.alt).toBe("rightarrow");
+  });
+});

@@ -20,6 +20,7 @@ module.exports = {
         'product-description': "#161B33",
         'product-price': "hsla(230, 40%, 14%, 0.75)",
         'product-cta': "#0E4D80",
+        'new-products-title': "#0D0C1D"
       }
     },
   },

@@ -1,2 +1,2 @@
 import CategoriesDropDown from './CategoriesDropDown';
-export { CategoriesDropDown };
+export default CategoriesDropDown;
