@@ -20,7 +20,7 @@ describe("New Products", () => {
 
 describe("New Products", () => {
   it("renders with expected left arrow on mobile screens", () => {
-    render(<Header />);
+    render(<NewProducts />);
     const left_arrow_icon = screen.getByRole("scroll-left") as HTMLImageElement;
     expect(left_arrow_icon.src).toContain("leftarrow");
     expect(left_arrow_icon.alt).toBe("leftarrow");
