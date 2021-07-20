@@ -1,25 +1,25 @@
 import React from 'react';
 import { render, screen } from "@testing-library/react";
-import Service from "./Service";
+import ServiceCard from "./ServiceCard";
 
 
-describe("Service", () => {
+describe("Service Card", () => {
   it("renders with a service illustration", () => {
-    render(<Service />);
+    render(<ServiceCard />);
     expect(screen.getByRole('illustration')).toBeInTheDocument();
   });
 });
 
-describe("Service", () => {
+describe("Service Card", () => {
   it("renders with a service title", () => {
-    render(<Service />);
+    render(<ServiceCard />);
     expect(screen.getByRole('title')).toBeInTheDocument();
   });
 });
 
-describe("Service", () => {
+describe("Service Card", () => {
   it("renders with a service description", () => {
-    render(<Service />);
+    render(<ServiceCard />);
     expect(screen.getByRole('description')).toBeInTheDocument();
   });
 });
