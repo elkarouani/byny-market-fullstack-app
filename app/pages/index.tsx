@@ -1,4 +1,10 @@
-import { Header, NewProducts, PopularProducts, Services } from 'sections';
+import { 
+  Header, 
+  NewProducts, 
+  PopularProducts, 
+  Services,
+  Footer 
+} from 'sections';
 
 export default function Home() {
   return (
@@ -7,6 +13,7 @@ export default function Home() {
       <NewProducts />
       <PopularProducts />
       <Services />
+      <Footer />
     </div>
   )
 }

@@ -24,6 +24,10 @@ module.exports = {
         'service-illustration': "hsla(206, 46%, 46%, 0.5)",
         'service-title': "hsla(206, 57%, 17%, 0.7)",
         'service-description': "hsla(230, 40%, 14%, 0.75)",
+        'footer': "hsla(198, 21%, 66%, 0.2)",
+        'footer-label': "#161B33",
+        'footer-link': "hsla(230, 40%, 14%, 0.65)",
+        'footer-description': "#0E4D80"
       }
     },
   },
