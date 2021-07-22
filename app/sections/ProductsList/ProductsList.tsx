@@ -6,7 +6,7 @@ export default function ProductsList() {
 	return (
 		<div className="mt-8 flex flex-col items-center">
 			<span className="px-2 text-xl leading-6 tracking-widest border-b border-black text-new-products-title" role="products-list-title">Products :</span>
-			<div className="mt-10 mr-2 grid grid-cols-2 gap-y-7" role="products-list">
+			<div className="mt-10 mr-2 grid grid-cols-2 gap-y-7 gap-x-4" role="products-list">
 				<ProductCard />
 				<ProductCard />
 				<ProductCard />
