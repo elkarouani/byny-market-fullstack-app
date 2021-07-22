@@ -27,7 +27,9 @@ module.exports = {
         'footer': "hsla(198, 21%, 66%, 0.2)",
         'footer-label': "#161B33",
         'footer-link': "hsla(230, 40%, 14%, 0.65)",
-        'footer-description': "#0E4D80"
+        'footer-description': "#0E4D80",
+        'navigation': "hsla(244, 41%, 8%, 1)",
+        'active-nav': "#A2CE38"
       }
     },
   },
