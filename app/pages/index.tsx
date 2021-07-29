@@ -8,8 +8,8 @@ import {
 
 export default function Home() {
   return (
-    <div className="w-max">
-      <Header />
+    <div>
+      <Header/>
       <NewProducts />
       <PopularProducts />
       <Services />
