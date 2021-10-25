@@ -8,5 +8,5 @@ router.register(r'groups', GroupViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='api_auth')),
+    path('authentication/', include('dj_rest_auth.urls')),
 ]

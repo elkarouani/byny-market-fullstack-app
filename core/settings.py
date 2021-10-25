@@ -45,6 +45,8 @@ INSTALLED_APPS = [
 
     # Third party libraries
     'rest_framework',
+    'rest_framework.authtoken',
+    'dj_rest_auth'
 ]
 
 # Custom Config

@@ -1,5 +1,6 @@
 asgiref==3.4.1
-autopep8==1.5.7
+autopep8==1.6.0
+dj-rest-auth==2.1.11
 Django==3.2.8
 djangorestframework==3.12.4
 pycodestyle==2.8.0
