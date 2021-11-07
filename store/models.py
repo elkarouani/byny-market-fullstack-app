@@ -47,10 +47,13 @@ class OrderDetail(models.Model):
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, verbose_name="Product")
     order = models.ForeignKey(
-        Order, on_delete=models.CASCADE, verbose_name="Order")
+        Order, on_delete=models.CASCADE, verbose_name="Order", null=True, blank=True)
     price = models.DecimalField(
         max_digits=6, decimal_places=2, verbose_name="Price")
     quantity = models.IntegerField(verbose_name="Quantity")
+    created_at = models.DateTimeField(
+        auto_now_add=True, verbose_name="Created at")
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Updated at")
 
     def __str__(self):
         return 'Client: {}, Product: {}, Order id: {}'.format(
