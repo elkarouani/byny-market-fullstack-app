@@ -44,6 +44,8 @@ class Order(models.Model):
 
 
 class OrderDetail(models.Model):
+    client = models.ForeignKey(
+        get_user_model(), on_delete=models.CASCADE, verbose_name="Client", null=True, blank=True)
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, verbose_name="Product")
     order = models.ForeignKey(

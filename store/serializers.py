@@ -17,10 +17,10 @@ class ProductSerializer(serializers.HyperlinkedModelSerializer):
 class OrderSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Order
-        fields = ['user', 'order_date', 'details', 'is_closed']
+        fields = ['order_date', 'details', 'is_closed']
 
 
 class OrderDetailSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = OrderDetail
-        fields = ['order', 'product', 'quantity', 'price']
+        fields = ['client', 'order', 'product', 'quantity', 'price']

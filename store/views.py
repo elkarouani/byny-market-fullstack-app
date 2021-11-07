@@ -21,6 +21,9 @@ class OrderDetailViewSet(viewsets.ModelViewSet):
     serializer_class = OrderDetailSerializer
     permissions_classes = [permissions.IsAuthenticated]
 
+    def perform_create(self, serializer):
+        serializer.save(client=self.request.user)
+
     def update(self, instance, validated_data):
         instance.quantity = validated_data.get('quantity', instance.quantity)
         instance.save()
@@ -32,23 +35,22 @@ class OrderViewSet(viewsets.ModelViewSet):
     serializer_class = OrderSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-    def create(self, request, *args, **kwargs):
-        # get all the order details without the order
-        order_details = OrderDetail.objects.filter(order__isnull=True)
+    def perform_create(self, serializer):
+        # get all order details without order and created by the authenticated user
+        order_details = OrderDetail.objects.filter(
+            order__isnull=True,
+            client=self.request.user
+        )
 
-        # get the order
-        order = Order.objects.create(user=request.user)
+        # create a new order
+        order = serializer.save(client=self.request.user)
 
-        # get the order details
+        # update the order details with the order
         for order_detail in order_details:
             order_detail.order = order
             order_detail.save()
-        
-        return super().create(request, *args, **kwargs)
 
-    def update(self, instance, validated_data):
-        # set is closed to true or false
-        instance.is_closed = validated_data.get('is_closed', instance.is_closed)
-
-        instance.save()
-        return instance
+        serializer.save(
+            client=self.request.user,
+            order=order
+        )
