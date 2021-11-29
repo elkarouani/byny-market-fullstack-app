@@ -1,0 +1,3 @@
+[submodule "BynyMarket-FrontEndProject"]
+	path = app
+	url = https://github.com/elkarouani/BynyMarket-FrontEndProject.git

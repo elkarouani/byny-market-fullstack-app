@@ -4,6 +4,7 @@ import PopularProducts from './PopularProducts/__import__';
 import Services from './Services/__import__';
 import ProductsList from './ProductsList/__import__';
 import Footer from './Footer/__import__';
+import CartList from './CartList/__import__';
 
 
 export { 
@@ -12,5 +13,6 @@ export {
 	PopularProducts, 
 	Services,
 	ProductsList, 
-	Footer 
+	Footer,
+	CartList
 };
