@@ -19,7 +19,7 @@ export default function ProductCard() {
 				<div className="flex ml-8">
 					<div className="flex flex-col items-center border-r pr-1">
 						<span className="text-[#4A90E2] font-medium">-</span>
-						<span className="text-[#161B33] text-opacity-75">1</span>
+						<span className="text-[#161B33] text-opacity-75">3</span>
 						<span className="text-[#4A90E2] font-medium">+</span>
 					</div>
 					<div className="flex items-center border border-[#FB7C7C] text-[#FB7C7C] rounded-xl px-2 ml-2">
