@@ -1,7 +1,7 @@
 import React from 'react';
 import { CategoriesDropDown } from 'components/';
 
-export default function Header({ with_catergories_dropdown = false }) {
+export default function Header({ without_catergories_dropdown = false }) {
 	return (
 		<div>
 			<div className="pt-1.5 px-4 flex items-center justify-between">
@@ -9,9 +9,9 @@ export default function Header({ with_catergories_dropdown = false }) {
 				<img src="icons/menu.svg" alt="menu" />
 			</div>
 			{
-				with_catergories_dropdown
-					? <CategoriesDropDown />
-					: null
+				without_catergories_dropdown
+					? null
+					: <CategoriesDropDown />
 			}
 
 		</div>

@@ -1,1 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.CartCallToAction {
+    @apply py-2 px-10 border border-[#34A853] rounded-xl text-sm font-semibold text-[#A2CE38];
+}
