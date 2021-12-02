@@ -5,6 +5,7 @@ import Services from './Services/__import__';
 import ProductsList from './ProductsList/__import__';
 import Footer from './Footer/__import__';
 import CartList from './CartList/__import__';
+import CheckoutForm from './CheckoutForm/__import__';
 
 
 export { 
@@ -14,5 +15,6 @@ export {
 	Services,
 	ProductsList, 
 	Footer,
-	CartList
+	CartList,
+	CheckoutForm
 };
