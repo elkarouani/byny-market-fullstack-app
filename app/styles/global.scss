@@ -4,6 +4,10 @@
     @apply py-2 px-10 border border-[#34A853] rounded-xl text-sm font-semibold text-[#A2CE38];
 }
 
+.AuthCallToAction {
+    @apply py-2 px-10 border border-[#0E4D80] rounded-xl text-sm font-semibold text-[#0E4D80];
+}
+
 .formInput {
     @apply border border-[#A2CE38] rounded-lg py-1 pl-5 text-[#7b7b7b];
 }
