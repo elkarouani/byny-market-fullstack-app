@@ -16,9 +16,9 @@ services:
       - "3000:3000"
     depends_on:
       - rest
-    # volumes:
-    #   - './app:/app'
-    #   - '/app/node_modules'
+    volumes:
+      - './app:/app'
+      - '/app/node_modules'
 
   rest:
     build: .
