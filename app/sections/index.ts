@@ -8,6 +8,7 @@ import CartList from './CartList/__import__';
 import CheckoutForm from './CheckoutForm/__import__';
 import SignInForm from './Auth/SignInForm/__import__';
 import SignUpForm from './Auth/SignUpForm/__import__';
+import SocialAuthActions from './Auth/SocialAuthActions/__import__';
 
 
 export { 
@@ -21,4 +22,5 @@ export {
 	CheckoutForm,
 	SignInForm,
 	SignUpForm,
+	SocialAuthActions,
 };
